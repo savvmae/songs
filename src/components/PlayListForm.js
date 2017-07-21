@@ -24,7 +24,6 @@ export default class PlayListForm extends Component {
 
     addSong = (event) => {
         event.preventDefault();
-        this.setState({ userName: event.target.value, songTitle: event.target.value, songArtist: event.target.value, songNotes: event.target.value });
         let listItem = JSON.stringify(this.state);
 
         fetch("https://tiny-lasagna-server.herokuapp.com/collections/playlisting", {
