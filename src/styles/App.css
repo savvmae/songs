@@ -1,6 +1,6 @@
 body {
 font-family: 'Righteous', comic-sans;
-  background: url('./circle.gif') no-repeat center center;
+  background: url('./guitar.gif') no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,6 +24,9 @@ font-family: 'Righteous', comic-sans;
 
 .App-intro {
   font-size: large;
+}
+.nav-bar-shadow {
+  box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
 }
 
 @keyframes App-logo-spin {
@@ -51,7 +54,7 @@ font-family: 'Righteous', comic-sans;
   padding: 10px;
 }
 .opacity {
- opacity: .8
+ background-color:rgba(247, 247, 247, .4);
 }
 .all-margin {
   margin: 30px 20px;
@@ -62,5 +65,13 @@ font-family: 'Righteous', comic-sans;
   width: 150px;
   font-size: 26px;
   font-family: 'Righteous', comic-sans;
+  margin: auto;
 
+}
+.bottom-margin {
+  margin-bottom: 20px;
+}
+.border {
+  border: 2px solid black;
+  border-radius: 4px;
 }

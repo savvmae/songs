@@ -9,7 +9,7 @@ export default class PlayListItem extends Component {
         return (
            
                 <div className="col-sm-6">
-                    <div className="card all-margin">
+                    <div className="card all-margin border">
                         <div className="card-block">
                             <h4 className="card-title">{song.songTitle} by: {song.songArtist}</h4>
                             <h5 className="card-subtitle mb-2 text-muted">Posted by: {song.userName}</h5>

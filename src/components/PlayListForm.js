@@ -46,22 +46,24 @@ export default class PlayListForm extends Component {
 
     render() {
         return (
-            <form className="card top-margin opacity" onSubmit={this.addSong}>
+            <form className="card top-margin opacity border" onSubmit={this.addSong}>
                 <div className="card-block text-center margin-auto">
                     <h1> Add a New Song! </h1>
-                    <div className="form-inline top-margin">
-                        <div className="input-group-addon some-padding">User Name: </div>
-                        <input onChange={this.handleInputChange('userName')} className="input" type="text" placeholder="Name or Username" value={this.state.userName} />
-                        <div className="input-group-addon some-padding" >Artist/Band: </div>
-                        <input onChange={this.handleInputChange('songArtist')} className="input" type="text" placeholder="Artist or Band Name" value={this.state.songArtist} />
+                    <div className="card some-padding border">
+                        <div className="form-inline top-margin border">
+                            <div className="input-group-addon some-padding">User Name: </div>
+                            <input onChange={this.handleInputChange('userName')} className="input" type="text" placeholder="Name or Username" value={this.state.userName} />
+                            <div className="input-group-addon some-padding" >Artist/Band: </div>
+                            <input onChange={this.handleInputChange('songArtist')} className="input" type="text" placeholder="Artist or Band Name" value={this.state.songArtist} />
+                        </div>
+                        <div className="form-inline bottom-margin border">
+                            <div className="input-group-addon some-padding">Song Title: </div>
+                            <input onChange={this.handleInputChange('songTitle')} className="input" type="text" placeholder="Song Title" value={this.state.songTitle} />
+                            <div className="input-group-addon some-padding">Song Notes: </div>
+                            <input onChange={this.handleInputChange('songNotes')} className="input" type="text" placeholder="Notes" value={this.state.songNotes} />
+                        </div>
+                        <button type="submit" className="btn btn-primary submit bottom-margin border">Submit</button>
                     </div>
-                    <div className="form-inline">
-                        <div className="input-group-addon some-padding">Song Title: </div>
-                        <input onChange={this.handleInputChange('songTitle')} className="input" type="text" placeholder="Song Title" value={this.state.songTitle} />
-                        <div className="input-group-addon some-padding">Notes About Song: </div>
-                        <input onChange={this.handleInputChange('songNotes')} className="input" type="text" placeholder="Notes" value={this.state.songNotes} />
-                    </div>
-                    <button type="submit" className="btn btn-primary submit">Submit</button>
                 </div>
             </form>
         )

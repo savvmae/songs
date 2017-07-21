@@ -29,9 +29,9 @@ export default class PlayList extends Component {
 
     render() {
         return (
-            <div className="card some-padding opacity">
+            <div className="card some-padding opacity bottom-margin border">
                 <div className="text-center">
-                    <button onClick={this.fetchData} type="submit" className="btn btn-primary submit">Update</button>
+                    <button onClick={this.fetchData} type="submit" className="btn btn-primary submit border">Update</button>
                 </div>
                 <div className="row">
                     {this.state.songs && this.state.songs.map(song => {
